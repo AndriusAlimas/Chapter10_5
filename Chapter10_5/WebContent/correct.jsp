@@ -5,17 +5,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Welcome Page</title>
+<title>Correct Table</title>
 </head>
 <body>
 
-	<table border="1">
-		<mine:iterateMovies movieCounter="0">
-			<tr><td>${movie}</td></tr>
-		</mine:iterateMovies>
-	</table>
-	<br><br>
+	<h1>Correct Result</h1>
+	<br>
 	
-	<a href="correct.jsp">correct table</a>
+	<table border="1">
+		<mine:CorrectIterateMovies movieCounter="0">
+			<tr><td>${movie}</td></tr>
+		</mine:CorrectIterateMovies>
+	</table>
+	
 </body>
 </html>

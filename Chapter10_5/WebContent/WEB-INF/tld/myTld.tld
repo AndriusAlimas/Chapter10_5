@@ -4,7 +4,7 @@
 	<uri>MyTagLib</uri>
 	
 	<tag>
-		<description>iterating movie tag</description>
+		<description>wrong iterating movie tag</description>
 		<name>iterateMovies</name>
 		<tag-class>com.example.tags.MyIteratorTag</tag-class>
 		<body-content>scriptless</body-content>
@@ -16,4 +16,17 @@
 		</attribute>
 	</tag>
 	
+	<!--  This tag almost identical just calling different TagSupport class which produce correct output -->
+	<tag>
+		<description>correct iterating movie tag</description>
+		<name>CorrectIterateMovies</name>
+		<tag-class>com.example.tags.MyCorrectIteratorTag</tag-class>
+		<body-content>scriptless</body-content>
+		
+		<attribute>
+			<name>movieCounter</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
 </taglib>
