@@ -1,0 +1,19 @@
+<taglib>
+	<tlib-version>1.2</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<uri>MyTagLib</uri>
+	
+	<tag>
+		<description>iterating movie tag</description>
+		<name>iterateMovies</name>
+		<tag-class>com.example.tags.MyIteratorTag</tag-class>
+		<body-content>scriptless</body-content>
+		
+		<attribute>
+			<name>movieCounter</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>
